@@ -41,7 +41,7 @@ export default {
 
       <!-- LOGO -->
 
-      <div>
+      <div class="logo">
         <img src="/img/dark-logo.png" alt="" />
       </div>
       <!-- SEARCHBAR -->
@@ -82,7 +82,22 @@ export default {
   </nav>
 
   <!-- JUMBO -->
-  <div class="jumbo"></div>
+  <div class="jumbo d-flex align-items-center justify-content-center">
+    <div class="d-flex flex-column align-items-center text-center">
+      <h2>Commence Business</h2>
+      <h1>Distant Mentoring Program</h1>
+      <button class="dowload-button py-2 px-5 mt-5">
+        Download Free guidebook
+        <font-awesome-icon icon="fa-solid fa-arrow-right" />
+      </button>
+    </div>
+    <div class="side-menu d-flex flex-column gap-3">
+      <font-awesome-icon icon="fa-solid fa-ruler-combined" />
+      <font-awesome-icon icon="fa-solid fa-cart-shopping" />
+      <font-awesome-icon icon="fa-solid fa-credit-card" />
+      <font-awesome-icon icon="fa-solid fa-bell" />
+    </div>
+  </div>
 </template>
 
 <style lang="scss">
@@ -90,6 +105,9 @@ export default {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+img {
+  width: 100%;
 }
 .navbar {
   font-size: 0.8rem;
@@ -108,7 +126,7 @@ ul {
   gap: 15px;
 }
 
-img {
+.logo > img {
   width: 150px;
 }
 
@@ -119,5 +137,36 @@ img {
 .search {
   background-color: #f5f5f5 !important;
   border: none !important;
+}
+
+.jumbo {
+  background-image: url("../../public/img/home-bg.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 700px;
+  position: relative;
+
+  h1,
+  h2 {
+    color: white;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  .side-menu {
+    position: absolute;
+    right: 0;
+    top: 250px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  .dowload-button {
+    border: none;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #20ad96;
+  }
 }
 </style>
