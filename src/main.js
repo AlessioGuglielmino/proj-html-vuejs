@@ -14,6 +14,8 @@ import { faCreditCard } from "@fortawesome/free-solid-svg-icons";
 import { faBell } from "@fortawesome/free-solid-svg-icons";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { faFileInvoice } from "@fortawesome/free-solid-svg-icons";
+import { faCalendar } from "@fortawesome/free-regular-svg-icons";
+import { faEye } from "@fortawesome/free-solid-svg-icons";
 
 library.add(
   faMagnifyingGlass,
@@ -24,7 +26,9 @@ library.add(
   faBell,
   faArrowRight,
   faFileInvoice,
-  faUser
+  faUser,
+  faEye,
+  faCalendar
 );
 
 import "bootstrap/dist/css/bootstrap.min.css";

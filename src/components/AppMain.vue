@@ -1,6 +1,7 @@
 <script>
 import { store } from "../data/store";
 import AppCard from "./AppCard.vue";
+import AppArtistCard from "./AppArtistCard.vue";
 
 export default {
   data() {
@@ -9,7 +10,7 @@ export default {
     };
   },
   // COMPONENTS
-  components: { AppCard },
+  components: { AppCard, AppArtistCard },
   // METODI
 };
 </script>
@@ -129,7 +130,7 @@ export default {
     </section>
 
     <!-- QUARTA SEZIONE -->
-    <section class="first-section">
+    <section class="fourth-section">
       <div class="row d-flex justify-content-center align-items-center">
         <div class="col-3 d-flex flex-column">
           <h6>TESTIMONIALS</h6>
@@ -176,7 +177,7 @@ export default {
     </section>
 
     <!-- QUINTA SEZIONE -->
-    <section class="second-section">
+    <section class="fifth-section">
       <div class="row d-flex justify-content-center align-items-center">
         <div
           class="col-6 d-flex justify-content-center align-items-center flex-column"
@@ -202,6 +203,35 @@ export default {
             grow at your best.
           </span>
           <button class="btn button w-50" type="submit">Get Free Guide</button>
+        </div>
+      </div>
+    </section>
+    <!-- SESTA SEZIONE -->
+    <section class="sixth-secton">
+      <div class="container text-center my-5">
+        <h6 class="text-secondary">READ FOR MORE JOYMENT</h6>
+        <div class="d-flex justify-content-center align-items-center gap-2">
+          <h2>Latest From</h2>
+          <p>Our Blogs</p>
+        </div>
+        <div class="row d-flex justify-content-center align-items-center gap-5">
+          <AppArtistCard
+            v-for="(card, index) in store.cardArtistComponents"
+            :imgCard="card.imgCard"
+            :text="card.text"
+            :date="card.date"
+            :views="card.views"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- SETTIMA SEZIONE -->
+    <section>
+      <div class="container">
+        <div class="row d-flex justify-content-between">
+          <div class="col-3 circle"></div>
+          <div class="col-4"></div>
+          <div class="col-3"></div>
         </div>
       </div>
     </section>
@@ -320,5 +350,20 @@ section {
       font-size: 0.8rem;
     }
   }
+}
+.sixth-secton {
+  background-color: #f8f8f8;
+  padding-top: 100px;
+
+  .card {
+    background-color: #f8f8f8;
+    border: none;
+  }
+}
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 5px solid #20ad96;
 }
 </style>

@@ -40,4 +40,29 @@ export const store = reactive({
       students: "62",
     },
   ],
+
+  cardArtistComponents: [
+    {
+      imgCard: "/img/artist.jpeg",
+      title: "Artist",
+      text: "Brush Stokes Energize Trees in Painting",
+      date: "May 15,2020",
+      views: "688 views",
+    },
+    {
+      imgCard: "/img/course2x480x298.jpg",
+      title: "Artist",
+      text: "Pocket-Sized Notebooks Hold Miniature Painting",
+      date: "May 15,2020",
+      views: "603 views",
+    },
+
+    {
+      imgCard: "/img/course3x480x298.jpg",
+      title: "Artist",
+      text: "Connection-Between Self- Portraits and Identity",
+      date: "May 15,2020",
+      views: "397 views",
+    },
+  ],
 });
