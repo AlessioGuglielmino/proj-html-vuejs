@@ -39,11 +39,11 @@ export default {
         <div
           class="col-6 d-flex justify-content-center align-items-center flex-column"
         >
-          <div class="first-pic-section">
+          <div class="bg-pic-section">
             <img src="../../public/img/stock.jpg" alt="" />
-            <img class="pic-1" src="../../public/img/about.jpg" alt="" />
-            <img class="pic-2" src="../../public/img/maxcoach.png" alt="" />
-            <img class="pic-3" src="../../public/img/maxcoach7.png" alt="" />
+            <img class="pic-1" src="/img/about.jpg" alt="" />
+            <img class="pic-2" src="/img/maxcoach.png" alt="" />
+            <img class="pic-3" src="/img/maxcoach7.png" alt="" />
           </div>
         </div>
       </div>
@@ -63,12 +63,43 @@ export default {
         </div>
       </div>
     </section>
+    <!-- SECONDA SEZIONE -->
+    <section class="second-section">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div
+          class="col-6 d-flex justify-content-center align-items-center flex-column"
+        >
+          <div class="bg-pic-section">
+            <img class="main-pic" src="/img/stock670x450.jpg" alt="" />
+            <img class="pic-4" src="/img/youtube.png" alt="" />
+            <img class="pic-5" src="/img/maxcoach05.png" alt="" />
+            <img class="pic-6" src="/img/maxcoach150x150.png" alt="" />
+          </div>
+        </div>
+        <div class="col-3 d-flex flex-column">
+          <h6 class="text-secondary">HOW WE WORK</h6>
+          <h2>Upgrade Your Skill</h2>
+          <p>Upgrade Your Life</p>
+
+          <span class="my-3">
+            opening up more opportunities in front of you to get the ticket to
+            move enyoiable door in life. Getting equipped with new skills for
+            new sets of insights into your career.MaxCoach accompany learners in
+            every stage of learning
+          </span>
+          <span class="my-3 fw-bold">
+            Download Free guidebook
+            <font-awesome-icon icon="fa-solid fa-arrow-right" />
+          </span>
+        </div>
+      </div>
+    </section>
   </main>
 </template>
 
 <style lang="scss" scoped>
-.first-section {
-  margin-top: 150px;
+section {
+  margin-top: 100px;
   .row > h2 {
     font-weight: 900 !important ;
   }
@@ -79,17 +110,20 @@ export default {
   }
   img {
     width: 100%;
+    border-radius: 5px;
   }
 
-  .first-pic-section {
+  .bg-pic-section {
     position: relative;
+  }
+  .main-pic {
+    z-index: 10;
   }
   .pic-1 {
     width: 150px;
     position: absolute;
     left: 80%;
     bottom: 70%;
-    border-radius: 5px;
     z-index: 1;
   }
   .pic-2 {
@@ -103,6 +137,27 @@ export default {
     position: absolute;
     left: 70%;
     bottom: 90%;
+  }
+  .pic-4 {
+    width: 15%;
+    position: absolute;
+    left: 35%;
+    bottom: 50%;
+    transform: translate(35%, 50%);
+  }
+  .pic-5 {
+    width: 25%;
+    position: absolute;
+    left: -170px;
+    bottom: 50%;
+    transform: translate(35%, 50%);
+  }
+  .pic-6 {
+    width: 20%;
+    position: absolute;
+    left: 75%;
+    top: 70%;
+    transform: translate(35%, 50%);
   }
 
   .guide,
