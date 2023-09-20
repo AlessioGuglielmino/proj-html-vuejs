@@ -12,4 +12,7 @@ export const store = reactive({
     "Contact us ",
     "Contact me ",
   ],
+  enrolledLeaners: "129+",
+  finishedSession: "80",
+  satisfactionRate: "4%",
 });
