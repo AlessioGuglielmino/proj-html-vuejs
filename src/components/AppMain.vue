@@ -1,5 +1,6 @@
 <script>
 import { store } from "../data/store";
+import AppCard from "./AppCard.vue";
 
 export default {
   data() {
@@ -8,7 +9,7 @@ export default {
     };
   },
   // COMPONENTS
-
+  components: { AppCard },
   // METODI
 };
 </script>
@@ -94,10 +95,35 @@ export default {
         </div>
       </div>
     </section>
+    <!-- TERZA SEZIONE -->
+    <section class="third-secton">
+      <div class="container text-center my-5">
+        <h6 class="text-secondary">HOW WE WORK</h6>
+        <div class="d-flex justify-content-center align-items-center gap-2">
+          <h2>Latest Online</h2>
+          <p>Courses</p>
+        </div>
+        <div class="row d-flex justify-content-center align-items-center gap-5">
+          <AppCard
+            v-for="(card, index) in store.cardComponents"
+            :imgCard="card.imgCard"
+            :text="card.text"
+            :price="card.price"
+            :lessons="card.lessons"
+            :students="card.students"
+          />
+        </div>
+      </div>
+    </section>
   </main>
 </template>
 
 <style lang="scss" scoped>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 section {
   margin-top: 100px;
   .row > h2 {
