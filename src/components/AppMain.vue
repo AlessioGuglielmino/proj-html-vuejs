@@ -113,6 +113,52 @@ export default {
             :students="card.students"
           />
         </div>
+
+        <div>
+          <h6 class="text-secondary">
+            Control your personal preference setting to get notified about
+            <br />
+            appropiate courses.
+            <span class="text-dark text-decoration-underline fw-bold"
+              >View all Courses
+              <font-awesome-icon icon="fa-solid fa-arrow-right" />
+            </span>
+          </h6>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUARTA SEZIONE -->
+    <section class="first-section">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-3 d-flex flex-column">
+          <h6>TESTIMONIALS</h6>
+          <h2>Learn about our</h2>
+          <p>Work Colture</p>
+          <h2>at MaxCoach</h2>
+          <span class="my-3">
+            Spend some times to visit our web site or head office and discover
+            pur current courses, enrrolmentprocedure, and registration deadline.
+            We're opening new classes everly beginning of each month
+          </span>
+          <span class="my-3"
+            >Have questions?
+            <span class="guide"
+              >Get Free Guide
+              <font-awesome-icon icon="fa-solid fa-arrow-right" />
+            </span>
+          </span>
+        </div>
+        <div
+          class="col-6 d-flex justify-content-center align-items-center flex-column"
+        >
+          <div class="bg-pic-section">
+            <img src="../../public/img/stock.jpg" alt="" />
+            <img class="pic-1" src="/img/about.jpg" alt="" />
+            <img class="pic-2" src="/img/maxcoach.png" alt="" />
+            <img class="pic-3" src="/img/maxcoach7.png" alt="" />
+          </div>
+        </div>
       </div>
     </section>
   </main>
