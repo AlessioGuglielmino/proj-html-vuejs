@@ -41,7 +41,7 @@ export default {
           class="col-6 d-flex justify-content-center align-items-center flex-column"
         >
           <div class="bg-pic-section">
-            <img src="../../public/img/stock.jpg" alt="" />
+            <img src="/img/stock.jpg" alt="" />
             <img class="pic-1" src="/img/about.jpg" alt="" />
             <img class="pic-2" src="/img/maxcoach.png" alt="" />
             <img class="pic-3" src="/img/maxcoach7.png" alt="" />
@@ -133,31 +133,75 @@ export default {
       <div class="row d-flex justify-content-center align-items-center">
         <div class="col-3 d-flex flex-column">
           <h6>TESTIMONIALS</h6>
-          <h2>Learn about our</h2>
-          <p>Work Colture</p>
-          <h2>at MaxCoach</h2>
+          <h2>Why do People</h2>
+          <div class="d-flex align-items-center">
+            <p>*Hearts*</p>
+            <h2>Us?</h2>
+          </div>
+
           <span class="my-3">
-            Spend some times to visit our web site or head office and discover
-            pur current courses, enrrolmentprocedure, and registration deadline.
-            We're opening new classes everly beginning of each month
+            Seeking for verbals of ous service quality? Find them here.
+            <br />Everything is trasparent and straightforward for your sense of
+            justification
           </span>
-          <span class="my-3"
-            >Have questions?
-            <span class="guide"
-              >Get Free Guide
-              <font-awesome-icon icon="fa-solid fa-arrow-right" />
-            </span>
+          <span class="text-dark text-decoration-underline fw-bold"
+            >View all
+            <font-awesome-icon icon="fa-solid fa-arrow-right" />
           </span>
         </div>
         <div
           class="col-6 d-flex justify-content-center align-items-center flex-column"
         >
-          <div class="bg-pic-section">
-            <img src="../../public/img/stock.jpg" alt="" />
-            <img class="pic-1" src="/img/about.jpg" alt="" />
-            <img class="pic-2" src="/img/maxcoach.png" alt="" />
-            <img class="pic-3" src="/img/maxcoach7.png" alt="" />
+          <div class="right-card-section d-flex flex-column gap-4">
+            <h6>
+              Professional team of specialist and passionate mentors at reach
+            </h6>
+            <span class="text-secondary"
+              >i need to get a certification for English proficiencyc and
+              MAxCoach is <br />
+              my best choice.Their tutors are smart and professional when
+              dealing with students.</span
+            >
+
+            <div class="d-flex gap-4">
+              <div><img src="/img/testimonial01.jpg" alt="" /></div>
+              <div>
+                <h6>MADLEY PONDOR</h6>
+                <span>/ IT Specialist</span>
+              </div>
+            </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUINTA SEZIONE -->
+    <section class="second-section">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div
+          class="col-6 d-flex justify-content-center align-items-center flex-column"
+        >
+          <div class="bg-pic-section">
+            <img class="main-pic" src="/img/hometeam.png" alt="" />
+            <img class="pic-7" src="/img/maxcoach05.png" alt="" />
+            <img class="pic-8" src="/img/maxcoach150x150.png" alt="" />
+            <img class="pic-9" src="/img/maxcoachshap.png" alt="" />
+          </div>
+        </div>
+        <div class="col-3 d-flex flex-column">
+          <h6 class="text-secondary">
+            EVERYTHING IN <strong>MAXCOACH</strong>
+          </h6>
+          <h2>We're Here</h2>
+          <p>Tranform</p>
+          <h2>You!</h2>
+
+          <span class="my-3">
+            As learners, people can enjoy great companionship form
+            <br />MaxCoach mentors and educators.We can help you develop and
+            grow at your best.
+          </span>
+          <button class="btn button w-50" type="submit">Get Free Guide</button>
         </div>
       </div>
     </section>
@@ -172,6 +216,8 @@ export default {
 }
 section {
   margin-top: 100px;
+  margin-bottom: 100px;
+
   .row > h2 {
     font-weight: 900 !important ;
   }
@@ -179,6 +225,9 @@ section {
   p {
     font-size: 2rem;
     color: #20ad96;
+  }
+  span {
+    font-size: 0.9rem;
   }
   img {
     width: 100%;
@@ -222,19 +271,54 @@ section {
     position: absolute;
     left: -170px;
     bottom: 50%;
-    transform: translate(35%, 50%);
   }
   .pic-6 {
     width: 20%;
     position: absolute;
     left: 75%;
     top: 70%;
-    transform: translate(35%, 50%);
   }
-
+  .pic-7 {
+    width: 25%;
+    position: absolute;
+    left: -140px;
+    bottom: 50%;
+  }
+  .pic-8 {
+    width: 25%;
+    position: absolute;
+    left: 40%;
+    top: 75%;
+  }
+  .pic-9 {
+    width: 25%;
+    position: absolute;
+    left: -200px;
+    bottom: 5%;
+    fill: #20ad96 !important;
+  }
+  .button {
+    background-color: #20ad96;
+    color: white;
+    padding: 0.4rem 0.8rem;
+  }
   .guide,
   .stats {
     color: #20ad96;
+  }
+  .right-card-section {
+    width: 70%;
+    box-shadow: 10px 10px 50px #b9b8b8;
+    border-radius: 5px;
+    padding: 2rem;
+
+    img {
+      width: 60px;
+      border-radius: 50%;
+    }
+    span {
+      font-size: 0.8rem;
+    }
   }
 }
 </style>
