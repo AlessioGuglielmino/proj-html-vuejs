@@ -18,4 +18,11 @@ export default {
 
 <template><AppHeader /> <AppMain /></template>
 
-<style></style>
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+</style>

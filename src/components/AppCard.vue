@@ -43,11 +43,6 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 .card {
   padding: 0;
 }

@@ -229,9 +229,39 @@ export default {
     <section>
       <div class="container">
         <div class="row d-flex justify-content-between">
-          <div class="col-3 circle"></div>
-          <div class="col-4"></div>
-          <div class="col-3"></div>
+          <div class="col-3 d-flex justify-content-center align-items-center">
+            <div class="circle"></div>
+          </div>
+          <div class="col-4">
+            <div
+              class="d-flex flex-column justify-content-center align-items-center gap-4 text-center"
+            >
+              <div class="d-flex align-items-center gap-2">
+                <h2>Subscribe</h2>
+                <p>Newsletters</p>
+              </div>
+
+              <h6 class="text-secondary">
+                Enter your email addres to register to our newsletter
+                subscription delivered on a regulas basis!
+              </h6>
+
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control search"
+                  placeholder="Enter your Email"
+                  aria-label="Recipient's username"
+                  aria-describedby="button-addon2"
+                />
+                <button class="btn button w-25" type="submit">Submit</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 last-section-right">
+            <img class="img-10" src="/img/maxcoach.png" alt="" />
+            <img class="img-11" src="/img/maxcoach09.png" alt="" />
+          </div>
         </div>
       </div>
     </section>
@@ -239,11 +269,6 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 section {
   margin-top: 100px;
   margin-bottom: 100px;
@@ -365,5 +390,25 @@ section {
   height: 50px;
   border-radius: 50%;
   border: 5px solid #20ad96;
+}
+.last-section-right {
+  position: relative;
+  img {
+    position: absolute;
+  }
+  .img-10 {
+    width: 100px;
+
+    right: 50%;
+    bottom: 30%;
+  }
+  .img-11 {
+    width: 150px;
+    right: 50%;
+    bottom: 60%;
+  }
+  .last-section-left {
+    position: relative;
+  }
 }
 </style>
