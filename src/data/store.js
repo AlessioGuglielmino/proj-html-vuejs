@@ -65,4 +65,24 @@ export const store = reactive({
       views: "397 views",
     },
   ],
+
+  address: [
+    "382 NE 191st #87394 Miami, FL 33-179-3899",
+    "+1(305) 547-9909 (9am - 5pm EST,Monday - Friday)",
+    "Support@maxcoach.com",
+  ],
+  explore: [
+    "Start here",
+    "Blog",
+    "Aout us",
+    "Success story",
+    "Courses",
+    "Contact us",
+  ],
+  Information: [
+    "Membership",
+    "Purchase guide",
+    "Privacy policy",
+    "Terms of service",
+  ],
 });

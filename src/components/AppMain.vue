@@ -38,15 +38,11 @@ export default {
             </span>
           </span>
         </div>
-        <div
-          class="col-6 d-flex justify-content-center align-items-center flex-column"
-        >
-          <div class="bg-pic-section">
-            <img src="/img/stock.jpg" alt="" />
-            <img class="pic-1" src="/img/about.jpg" alt="" />
-            <img class="pic-2" src="/img/maxcoach.png" alt="" />
-            <img class="pic-3" src="/img/maxcoach7.png" alt="" />
-          </div>
+        <div class="col-4 position-relative">
+          <img class="try" src="/img/stock.jpg" alt="" />
+          <img class="pic-1" src="/img/about.jpg" alt="" />
+          <img class="pic-2" src="/img/maxcoach.png" alt="" />
+          <img class="pic-3" src="/img/maxcoach7.png" alt="" />
         </div>
       </div>
 
@@ -69,9 +65,9 @@ export default {
     <section class="second-section">
       <div class="row d-flex justify-content-center align-items-center">
         <div
-          class="col-6 d-flex justify-content-center align-items-center flex-column"
+          class="col-4 d-flex justify-content-center align-items-center flex-column"
         >
-          <div class="bg-pic-section">
+          <div class="position-relative">
             <img class="main-pic" src="/img/stock670x450.jpg" alt="" />
             <img class="pic-4" src="/img/youtube.png" alt="" />
             <img class="pic-5" src="/img/maxcoach05.png" alt="" />
@@ -180,9 +176,9 @@ export default {
     <section class="fifth-section">
       <div class="row d-flex justify-content-center align-items-center">
         <div
-          class="col-6 d-flex justify-content-center align-items-center flex-column"
+          class="col-4 d-flex justify-content-center align-items-center flex-column"
         >
-          <div class="bg-pic-section">
+          <div class="try position-relative">
             <img class="main-pic" src="/img/hometeam.png" alt="" />
             <img class="pic-7" src="/img/maxcoach05.png" alt="" />
             <img class="pic-8" src="/img/maxcoach150x150.png" alt="" />
@@ -273,6 +269,8 @@ section {
   margin-top: 100px;
   margin-bottom: 100px;
 
+  .try {
+  }
   .row > h2 {
     font-weight: 900 !important ;
   }
@@ -289,24 +287,22 @@ section {
     border-radius: 5px;
   }
 
-  .bg-pic-section {
+  .position-relative {
     position: relative;
   }
-  .main-pic {
-    z-index: 10;
-  }
+
   .pic-1 {
-    width: 150px;
+    width: 120px;
     position: absolute;
-    left: 80%;
-    bottom: 70%;
+    left: 410px;
+    bottom: 235px;
     z-index: 1;
   }
   .pic-2 {
     width: 100px;
     position: absolute;
     left: 70%;
-    top: 90%;
+    top: 250px;
   }
   .pic-3 {
     width: 70px;

@@ -15,7 +15,7 @@ export default {
 
 <template>
   <!-- NAVBAR -->
-  <nav class="navbar d-flex align-items-center">
+  <nav class="navbar d-flex align-items-center" id="top">
     <div class="container d-flex justify-content-between p-3">
       <!-- LINKS -->
       <div>
@@ -142,6 +142,7 @@ ul {
 .jumbo {
   background-image: url("../../public/img/home-bg.jpg");
   background-repeat: no-repeat;
+  background-size: 100%;
   width: 100%;
   height: 700px;
   position: relative;
@@ -167,6 +168,10 @@ ul {
     border-radius: 10px;
     background-color: #ffffff;
     color: #20ad96;
+  }
+  .dowload-button:hover {
+    background-color: #20ad96;
+    color: #ffffff;
   }
 }
 </style>

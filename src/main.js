@@ -16,6 +16,12 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { faFileInvoice } from "@fortawesome/free-solid-svg-icons";
 import { faCalendar } from "@fortawesome/free-regular-svg-icons";
 import { faEye } from "@fortawesome/free-solid-svg-icons";
+import { faSquareFacebook } from "@fortawesome/free-brands-svg-icons";
+import { faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
+import { faC } from "@fortawesome/free-solid-svg-icons";
 
 library.add(
   faMagnifyingGlass,
@@ -28,7 +34,13 @@ library.add(
   faFileInvoice,
   faUser,
   faEye,
-  faCalendar
+  faCalendar,
+  faSquareFacebook,
+  faTwitter,
+  faInstagram,
+  faLinkedin,
+  faArrowUp,
+  faC
 );
 
 import "bootstrap/dist/css/bootstrap.min.css";
