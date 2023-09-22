@@ -7,6 +7,7 @@ export default {
   data() {
     return {
       store,
+      userEmail: "",
     };
   },
   // COMPONENTS
@@ -244,6 +245,7 @@ export default {
 
               <div class="input-group">
                 <input
+                  v-model="userEmail"
                   type="text"
                   class="form-control search"
                   placeholder="Enter your Email"

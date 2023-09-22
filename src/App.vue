@@ -27,22 +27,18 @@ export default {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-/* width */
 ::-webkit-scrollbar {
   width: 15px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: #20ad96;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #20ad96;
 }

@@ -5,6 +5,7 @@ export default {
   data() {
     return {
       store,
+      searched: "",
     };
   },
   // COMPONENTS
@@ -60,6 +61,7 @@ export default {
 
         <div class="input-group">
           <input
+            v-model="searched"
             type="text"
             class="form-control search"
             placeholder="Search..."
@@ -155,7 +157,8 @@ ul {
     font-size: 4rem;
   }
   .side-menu {
-    position: absolute;
+    box-shadow: 10px 10px 50px #b9b8b8;
+    position: fixed;
     right: 0;
     top: 250px;
     background-color: #ffffff;
